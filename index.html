@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">Quiz App</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="quiz-container">
+      <section class="quiz-card">
+        <h2 class="quiz-question">Was ist die Hauptstadt von Deutschland?</h2>
+        <div>
+        <p class="quiz-answer hidden">Berlin</p>
+        <button class="show-answer-btn">Show Answer</button>
+        </div>
+        <div class="quiz-tags">
+            <span class="tag">Hauptstadt</span>
+            <span class="tag">Deutschland</span>
+            <span class="tag">Europa</span>
+          </div>
+      </section>
+
+      <section class="quiz-card">
+        <h2 class="quiz-question">Wie viele Planeten hat unser Sonnensystem?</h2>
+        <div>
+        <p class="quiz-answer hidden">Acht Planeten</p>
+        <button class="show-answer-btn">Show Answer</button>
+        </div>
+        <div class="quiz-tags">
+            <span class="tag">Planeten</span>
+            <span class="tag">Sonnensystem</span>
+            <span class="tag">Astronomie</span>
+          </div>
+      </section>
+    </main>
+
+    <script>
+      // Toggle the answer visibility on button click
+      document.querySelectorAll('.show-answer-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const answer = button.previousElementSibling;
+          answer.classList.toggle('hidden');
+
+          // Change the button text based on the visibility of the answer
+          if (answer.classList.contains('hidden')) {
+            button.textContent = 'Show Answer';
+          } else {
+            button.textContent = 'Hide Answer';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

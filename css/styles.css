@@ -1,0 +1,111 @@
+/* Grundlegendes Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .header__title {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Quiz Container */
+  .quiz-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Quiz Card */
+  .quiz-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative; /* Ermöglicht die Positionierung der Tags innerhalb der Card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Platzierung von Button und Tags */
+    height: 100%; /* Die Card füllt den Container vollständig */
+    position: relative;
+  }
+  
+  .quiz-question {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  
+  .quiz-answer {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .show-answer-btn {
+    margin-bottom: auto; /* Schiebt die Tags nach unten */
+  }
+
+  .quiz-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  /* Styling der Tags */
+.quiz-tags {
+    display: flex;
+    flex-wrap: wrap; /* Falls es viele Tags gibt, sie in die nächste Zeile umbrechen */
+    gap: 8px; /* Abstand zwischen den einzelnen Tags */
+    margin-top: 50px; /* Abstand nach oben, zwischen dem Button und den Tags */
+    position: absolute;
+    bottom: 10px; /* Positioniere die Tags unten in der Card */
+    left: 20px; /* Etwas Abstand von der linken Seite */
+  }
+  
+  .tag {
+    background-color: #f1c40f; /* Farbe der Tags (z.B. Gelb) */
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  /* Answer initially hidden */
+  .hidden {
+    display: none;
+  }
+  
+  /* Button Styling */
+  .show-answer-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .show-answer-btn:hover {
+    background-color: #2980b9;
+  }
+  
