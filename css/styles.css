@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #011c38;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@ body {
   
   /* Header */
   .header {
-    background-color: #3498db;
+    background-color: #18406a;
     color: white;
     padding: 20px;
     width: 100%;
@@ -20,7 +20,7 @@ body {
   }
   
   .header__title {
-    margin: 0;
+    margin: 0; 
     font-size: 2rem;
   }
   
@@ -37,17 +37,15 @@ body {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #ffcc00;
     position: absolute; /* Absolut innerhalb der Card positionieren */
-    top: -10px; /* Abstand vom oberen Rand */
-    right: -10px; /* Abstand vom rechten Rand */
+    top: 0px; /* Abstand vom oberen Rand */
+    right: 0px; /* Abstand vom rechten Rand */
   }
 
   .bookmark-btn-one {
     background: none;
     border: none;
     cursor: pointer;
-    color: #ffcc00;
     position: absolute; /* Absolut innerhalb der Card positionieren */
     top: -10px; /* Abstand vom oberen Rand */
     right: -10px; /* Abstand vom rechten Rand */
@@ -60,7 +58,6 @@ body {
   /* Quiz Card */
   .quiz-card {
     background-color: white;
-    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 40px;
     margin-bottom: 40px;
@@ -70,23 +67,25 @@ body {
     flex-direction: column;
     justify-content: space-between; /* Platzierung von Button und Tags */
     height: 100%; /* Die Card füllt den Container vollständig */
+    border-radius: 50px 0 30px 0; /* Ändert die linke obere und untere Ecke */
   }
   
   .quiz-question {
     font-size: 1.5rem;
-    color: #333;
+    color: #2a2a2a;
     margin: 0 0 10px 0;
   }
   
   .quiz-answer {
     font-size: 1.2rem;
-    color: #666;
+    color: #4a4a4a;
     margin: 10px 0;
     transition: opacity 0.3s ease;
   }
 
   .show-answer-btn {
     margin-bottom: auto; /* Schiebt die Tags nach unten */
+    margin-top: 30px;
   }
 
   /* Styling der Tags */
@@ -98,7 +97,7 @@ body {
   }
   
   .tag {
-    background-color: #f1c40f; /* Farbe der Tags */
+    background-color: #f2b069; /* Farbe der Tags */
     color: #333;
     padding: 5px 10px;
     border-radius: 12px;
@@ -114,7 +113,7 @@ body {
   /* Button Styling */
   .show-answer-btn {
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #ff1dbf;
     color: white;
     border: none;
     border-radius: 5px;
@@ -124,13 +123,12 @@ body {
   }
   
   .show-answer-btn:hover {
-    background-color: #2980b9;
+    background-color: #efa6da;
   }
-  
 
   /* Footer-Styling */
 .footer {
-    background-color: #3498db;
+    background-color: #18406a;
     color: white;
     padding: 15px 0;
     position: fixed;
@@ -142,7 +140,7 @@ body {
   .footer-nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
   }
   
   .nav-link {
