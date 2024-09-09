@@ -15,6 +15,8 @@ body {
     padding: 20px;
     width: 100%;
     text-align: center;
+    position: fixed;
+      z-index: 1000;
   }
   
   .header__title {
@@ -26,15 +28,40 @@ body {
   .quiz-container {
     width: 100%;
     max-width: 600px;
-    padding: 20px;
+    padding-top: 100px;
   }
-  
+
+  .bookmark-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffcc00;
+    position: absolute; /* Absolut innerhalb der Card positionieren */
+    top: -10px; /* Abstand vom oberen Rand */
+    right: -10px; /* Abstand vom rechten Rand */
+  }
+
+  .bookmark-btn-one {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffcc00;
+    position: absolute; /* Absolut innerhalb der Card positionieren */
+    top: -10px; /* Abstand vom oberen Rand */
+    right: -10px; /* Abstand vom rechten Rand */
+    border: 2px solid #ffcc00; /* Dicke und Farbe der Border */
+    border-radius: 50%; /* Macht die Border rund */
+    font-size: 1.5rem; /* Größe des Icons */
+    padding: 10px; /* Abstand innerhalb des Kreises */
+  }
+
   /* Quiz Card */
   .quiz-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 40px;
     margin-bottom: 40px;
     text-align: center;
     position: relative; /* Ermöglicht die Positionierung der Tags innerhalb der Card */
@@ -42,7 +69,6 @@ body {
     flex-direction: column;
     justify-content: space-between; /* Platzierung von Button und Tags */
     height: 100%; /* Die Card füllt den Container vollständig */
-    position: relative;
   }
   
   .quiz-question {
@@ -62,26 +88,16 @@ body {
     margin-bottom: auto; /* Schiebt die Tags nach unten */
   }
 
-  .quiz-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-
   /* Styling der Tags */
-.quiz-tags {
+  .quiz-tags {
     display: flex;
-    flex-wrap: wrap; /* Falls es viele Tags gibt, sie in die nächste Zeile umbrechen */
-    gap: 8px; /* Abstand zwischen den einzelnen Tags */
-    margin-top: 50px; /* Abstand nach oben, zwischen dem Button und den Tags */
-    position: absolute;
-    bottom: 10px; /* Positioniere die Tags unten in der Card */
-    left: 20px; /* Etwas Abstand von der linken Seite */
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 50px; /* Stellt sicher, dass ein Abstand zu vorherigen Inhalten besteht */
   }
   
   .tag {
-    background-color: #f1c40f; /* Farbe der Tags (z.B. Gelb) */
+    background-color: #f1c40f; /* Farbe der Tags */
     color: #333;
     padding: 5px 10px;
     border-radius: 12px;
@@ -103,9 +119,34 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    width: auto; /* Breite passt sich an den Text an */
   }
   
   .show-answer-btn:hover {
     background-color: #2980b9;
   }
   
+
+  /* Footer-Styling */
+.footer {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
