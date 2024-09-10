@@ -1,0 +1,27 @@
+:root {
+    --color-primary-text: #ffffff;
+    --color-quiz-text: #2a2a2a;
+    --color-quiz-button: #ff1dbf;
+    --color-tags: #f2b069;
+    --color-card-backround: #ffffff;
+    --color-primary-backround: #011c38;
+    --color-header-backround: #18406a;
+    --color-footer-backround: #18406a;
+
+    --title-size: 2rem;
+    --nav-size: 1.2rem;
+    --quiz-text-size: 1.5rem;
+    --quiz-button-size: 1rem;
+    --tags-size: 0.8rem;
+
+        --card-padding: 40px; /* Padding innerhalb der Card */
+        --card-margin-bottom: 40px; /* Abstand zwischen den Cards */
+        --question-margin-bottom: 10px; /* Abstand zwischen Frage und Antwort */
+        --answer-margin: 10px 0; /* Abstand um die Antwort */
+        --tags-margin-top: 50px; /* Abstand zwischen Inhalt und Tags */
+        --tag-gap: 8px; /* Abstand zwischen den einzelnen Tags */
+        --button-margin-top: 30px; /* Abstand zwischen Antwort und Button */
+        --button-padding: 10px 20px; /* Padding innerhalb des Buttons */
+      
+      
+}

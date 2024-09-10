@@ -1,0 +1,21 @@
+@import "./footer.css";
+@import "./header.css";
+@import "./bookmark.css";
+@import "./quiz-card.css";
+@import "./quiz-button.css";
+@import "./root.css";
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Grundlegendes Styling */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--color-primary-backround);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

@@ -1,0 +1,23 @@
+/* Button Styling */
+.show-answer-btn {
+  margin-bottom: auto; /* Der untere Rand des Buttons passt sich an */
+  margin-top: var(--button-margin-top); /* Abstand zwischen der Antwort und dem Button */
+  padding: var(--button-padding); /* Innenabstand des Buttons */
+  background-color: var(--color-quiz-button); /* Hintergrundfarbe des Buttons */
+  color: var(--color-primary-text); /* Textfarbe des Buttons */
+  border: none; /* Keine Rahmen um den Button */
+  border-radius: 5px; /* Leicht abgerundete Ecken des Buttons */
+  cursor: pointer; /* Zeigt den Mauszeiger als Hand an */
+  font-size: var(--quiz-button-size); /* Schriftgröße des Buttons */
+  width: auto; /* Breite des Buttons passt sich dem Inhalt an */
+}
+  
+  /* Answer initially hidden */
+  .hidden {
+    display: none;
+  }
+  
+  
+  .show-answer-btn:hover {
+    background-color: #efa6da;
+  }

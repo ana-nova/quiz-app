@@ -1,0 +1,15 @@
+  /* Header */
+  .header {
+    background-color: var(--color-header-backround);
+    color: var(--color-primary-text);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+  }
+  
+  .header__title {
+    margin: 0; 
+    font-size: var(--title-size);
+  }

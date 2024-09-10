@@ -1,0 +1,52 @@
+/* Quiz Container */
+.quiz-container {
+  width: 100%; /* Der Container nimmt die gesamte Breite ein */
+  max-width: 600px; /* Begrenzung der maximalen Breite auf 600px */
+  padding-top: 100px; /* Abstand oben im Container, z.B. unter dem Header */
+  padding-bottom: 60px; /* Abstand unten im Container, z.B. vor dem Footer */
+}
+
+/* Quiz Card */
+.quiz-card {
+  background-color: var(--color-card-backround); /* Hintergrundfarbe der Karte */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schattierung um die Karte herum */
+  padding: var(--card-padding); /* Padding innerhalb der Karte */
+  margin-bottom: var(--card-margin-bottom); /* Abstand zwischen den einzelnen Karten */
+  text-align: center; /* Text wird zentriert */
+  position: relative; /* Position für die Tags (wenn absolut positioniert) */
+  display: flex; /* Flexbox für Layout innerhalb der Karte */
+  flex-direction: column; /* Elemente werden vertikal angeordnet */
+  justify-content: space-between; /* Verteilung der Elemente innerhalb der Karte */
+  height: 100%; /* Die Karte nimmt die volle Höhe des Containers ein */
+  border-radius: 50px 0 30px 0; /* Abgerundete Ecken: oben links und unten rechts */
+}
+
+.quiz-question {
+  font-size: var(--quiz-text-size); /* Schriftgröße der Frage */
+  color: var(--color-quiz-text); /* Textfarbe der Frage */
+  margin: 0 0 var(--question-margin-bottom) 0; /* Abstand nach unten zur nächsten Komponente */
+}
+
+.quiz-answer {
+  font-size: 1.2rem; /* Schriftgröße der Antwort */
+  color: var(--color-quiz-text); /* Textfarbe der Antwort */
+  margin: var(--answer-margin); /* Abstand um die Antwort herum */
+  transition: opacity 0.3s ease; /* Glatte Übergänge bei der Änderung der Sichtbarkeit */
+}
+
+/* Styling der Tags */
+.quiz-tags {
+  display: flex; /* Flexbox zur Anordnung der Tags */
+  flex-wrap: wrap; /* Tags umbrechen, wenn der Platz nicht reicht */
+  gap: var(--tag-gap); /* Abstand zwischen den einzelnen Tags */
+  margin-top: var(--tags-margin-top); /* Abstand zwischen dem Hauptinhalt der Karte und den Tags */
+}
+
+.tag {
+  background-color: var(--color-tags); /* Hintergrundfarbe der Tags */
+  color: var(--color-quiz-text); /* Textfarbe der Tags */
+  padding: 5px 10px; /* Innenabstand innerhalb der Tags */
+  border-radius: 12px; /* Abgerundete Ecken der Tags */
+  font-size: var(--tags-size); /* Schriftgröße der Tags */
+  font-weight: bold; /* Fettschrift für die Tags */
+}
