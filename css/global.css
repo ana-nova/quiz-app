@@ -5,6 +5,8 @@
 @import "./quiz-button.css";
 @import "./root.css";
 @import "./quizForm.css";
+@import '../node_modules/remixicon/fonts/remixicon.css';
+
 
 *::before,
 *::after {
