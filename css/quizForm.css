@@ -28,7 +28,6 @@
         margin-bottom: 10px;
         font-size: var(--tags-size);
         border-radius: 5px;
-        font-style: italic;
         border: 1px solid var(--color-primary-backround);
     }
 
@@ -69,5 +68,13 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  
+  #question-count, #answer-count {
+    font-size: 0.9rem;
+    color: var(--color-quiz-text);
+    display: block;
+    text-align: right;
+    font-style: italic;
   }
   

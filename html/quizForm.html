@@ -5,6 +5,7 @@
     <meta name="viewport" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="icon" href="../node_modules/remixicon/icons/Document/survey-line.svg" type="image/png">
     <script src="../js/newQuestions.js" defer></script>
   </head>
   <body>
@@ -23,10 +24,12 @@
                 id="quiz-question"
                 name="quiz-question"
                 rows="4"
+                maxlength="150"
                 required
                 placeholder="Enter your quiz question here"
                 class="quiz-input"
               ></textarea>
+              <span id="question-count"></span>
             </fieldset>
           
             <!-- Fieldset für die Quizantwort -->
@@ -36,10 +39,12 @@
                 id="quiz-answer"
                 name="quiz-answer"
                 rows="4"
+                maxlength="60"
                 required
                 placeholder="Enter the answer here"
                 class="quiz-input"
               ></textarea>
+              <span id="answer-count"></span>
             </fieldset>
           
             <!-- Fieldset für den Quiz-Tag -->
@@ -49,6 +54,7 @@
                 type="text"
                 id="quiz-tag"
                 name="quiz-tag"
+                maxlength="20"
                 required
                 placeholder="Enter a tag"
                 class="quiz-input"

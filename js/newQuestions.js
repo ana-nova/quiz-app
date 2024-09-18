@@ -53,3 +53,33 @@ form.addEventListener("submit", (event) => {
 /* 
 appendChild(): Fügt nur ein einzelnes DOM-Element hinzu.
 append(): Kann sowohl DOM-Elemente als auch Text anhängen und sogar mehrere Elemente oder Textstücke auf einmal. */
+
+
+// Counter Bereich 
+// Funktion, um verbleibende Zeichen zu aktualisieren, allgemein
+const updateAmountLeft = (element, counter, maxLength) => {
+  counter.innerText = `${maxLength - element.value.length} characters remaining`;
+};
+
+// Counter für die Quizfragen
+const questionElement = document.querySelector('#quiz-question');
+const questionCount = document.querySelector('#question-count');
+const questionMaxLength = questionElement.getAttribute("maxlength");
+
+updateAmountLeft(questionElement, questionCount, questionMaxLength); // Setze den initialen Wert
+
+questionElement.addEventListener("input", () => {
+  updateAmountLeft(questionElement, questionCount, questionMaxLength);
+});
+
+// Counter für die Quizantwort
+const answerElement = document.querySelector('#quiz-answer');
+const answerCount = document.querySelector('#answer-count');
+const answerMaxLength = answerElement.getAttribute("maxlength"); 
+
+updateAmountLeft(answerElement, answerCount, answerMaxLength);
+
+answerElement.addEventListener("input", () => {
+  updateAmountLeft(answerElement, answerCount, answerMaxLength);
+});
+

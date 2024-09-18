@@ -5,66 +5,67 @@
     <meta name="viewport" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="icon" href="../node_modules/remixicon/icons/Document/survey-line.svg" type="image/png">
     <script src="../js/homePage.js" defer></script>
   </head>
   <body>
-    <!-- Header -->
+
     <header class="header">
       <h1 class="header__title" aria-label="Quiz App with Brain Icon">🧠 Quiz App 🧠</h1>
     </header>
 
-    <!-- Main Content -->
     <main class="quiz-container">
-        <section class="quiz-card">
-          <button class="bookmark-btn-one" aria-label="add">
-            <i class="ri-heart-fill"></i> 
-          </button>  
-            <h2 class="quiz-question">Was ist die Hauptstadt von Deutschland?</h2>
-            <div>
-            <p class="quiz-answer hidden">Berlin</p>
-            <button class="show-answer-btn">Show Answer</button>
-            </div>
-            <div class="quiz-tags">
-                <span class="tag"># Hauptstadt</span>
-                <span class="tag"># Deutschland</span>
-                <span class="tag"># Europa</span>
-              </div>
-          </section>
+        
+      <section class="quiz-card">
+        <button class="bookmark-btn-one" aria-label="add">
+          <i class="ri-heart-fill"></i> 
+        </button>          
+        <h2 class="quiz-question">Wie viele Finger hat ein Faultier?</h2>
+        <div>
+          <p class="quiz-answer hidden">8</p>
+          <button class="show-answer-btn">Show Answer</button>
+        </div>
+        <div class="quiz-tags">
+          <span class="tag"># Tiere</span>
+          <span class="tag"># Natur</span>
+          <span class="tag"># Biologie</span>
+        </div>
+      </section>
+      
+      <section class="quiz-card">
+        <button class="bookmark-btn-one" aria-label="add">
+          <i class="ri-heart-fill"></i> 
+        </button>          
+        <h2 class="quiz-question">Wie viele Minuten dauert es durchschnittlich, bis ein Ei hartgekocht ist?</h2>
+        <div>
+          <p class="quiz-answer hidden">10 Minuten</p>
+          <button class="show-answer-btn">Show Answer</button>
+        </div>
+        <div class="quiz-tags">
+          <span class="tag"># Essen</span>
+          <span class="tag"># Kochen</span>
+          <span class="tag"># Ei</span>
+        </div>
+      </section>
+      
+      <section class="quiz-card">
+        <button class="bookmark-btn-one" aria-label="add">
+          <i class="ri-heart-fill"></i> 
+        </button>          
+        <h2 class="quiz-question">Welches Tier schläft 20 Stunden am Tag?</h2>
+        <div>
+          <p class="quiz-answer hidden">Koala</p>
+          <button class="show-answer-btn">Show Answer</button>
+        </div>
+        <div class="quiz-tags">
+          <span class="tag"># Tiere</span>
+          <span class="tag"># Schlaf</span>
+          <span class="tag"># Natur</span>
+        </div>
+      </section> 
 
-          <section class="quiz-card">
-            <button class="bookmark-btn-one" aria-label="add">
-              <i class="ri-heart-fill"></i> 
-            </button> 
-            <h2 class="quiz-question">Wie viele Planeten hat unser Sonnensystem?</h2>
-            <div>
-            <p class="quiz-answer hidden">Acht Planeten</p>
-            <button class="show-answer-btn">Show Answer</button>
-            </div>
-            <div class="quiz-tags">
-                <span class="tag"># Planeten</span>
-                <span class="tag"># Sonnensystem</span>
-                <span class="tag"># Astronomie</span>
-              </div>
-          </section>  
-    
-          <section class="quiz-card">
-            <button class="bookmark-btn-one" aria-label="add">
-              <i class="ri-heart-fill"></i> 
-            </button> 
-            <h2 class="quiz-question">Wie viele Planeten hat unser Sonnensystem?</h2>
-            <div>
-            <p class="quiz-answer hidden" aria-labelledby="question1" aria-hidden="true">Acht Planeten</p>
-            <button class="show-answer-btn">Show Answer</button>
-            </div>
-            <div class="quiz-tags" aria-label="Tags related to this question">
-                <span class="tag"># Planeten</span>
-                <span class="tag"># Sonnensystem</span>
-                <span class="tag"># Astronomie</span>
-              </div>
-          </section>
     </main>
 
-        <!-- Footer mit Navigation -->
         <footer class="footer">
             <nav class="footer-nav" aria-label="Main navigation">
               <a href="index.html" class="nav-link" aria-label="View homepage">🏠 Home</a>
