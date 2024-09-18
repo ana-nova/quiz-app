@@ -15,50 +15,54 @@
 
     <!-- Main Content -->
     <main class="main">
-        <form data-js="form" id="quiz-form">
-            <!-- Quizfrage -->
+        <form data-js="form" class="form">
+            <!-- Fieldset für die Quizfrage -->
             <fieldset>
-            <legend>Quiz Question</legend>
-            <label for="quiz-question">Question:</label>
-            <textarea
+              <legend>Quiz Question</legend>
+              <textarea
                 id="quiz-question"
                 name="quiz-question"
                 rows="4"
                 required
                 placeholder="Enter your quiz question here"
-            ></textarea>
+                class="quiz-input"
+              ></textarea>
             </fieldset>
-
-            <!-- Quizantwort -->
+          
+            <!-- Fieldset für die Quizantwort -->
             <fieldset>
-            <legend>Quiz Answer</legend>
-            <label for="quiz-answer">Answer:</label>
-            <textarea
+              <legend>Quiz Answer</legend>
+              <textarea
                 id="quiz-answer"
                 name="quiz-answer"
                 rows="4"
                 required
                 placeholder="Enter the answer here"
-            ></textarea>
+                class="quiz-input"
+              ></textarea>
             </fieldset>
-
-            <!-- Quiz-Tag -->
+          
+            <!-- Fieldset für den Quiz-Tag -->
             <fieldset>
-            <legend>Quiz Tag</legend>
-            <label for="quiz-tag">Tag:</label>
-            <input
+              <legend>Quiz Tag</legend>
+              <input
                 type="text"
                 id="quiz-tag"
                 name="quiz-tag"
                 required
                 placeholder="Enter a tag"
-            />
+                class="quiz-input"
+              />
             </fieldset>
-
+          
             <!-- Submit Button -->
-            <button type="submit">Add Quiz</button>
-        </form> 
-    </main>
+            <button type="submit" class="submit-btn">Submit Quiz</button>
+          </form>
+          
+          <!-- Container für die generierten Quiz Cards -->
+          <section class="quiz-container"></section>
+          
+        </main>
 
         <!-- Footer mit Navigation -->
         <footer class="footer">

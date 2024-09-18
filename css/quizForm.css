@@ -26,8 +26,9 @@
         width: 370px;
         padding: 8px;
         margin-bottom: 10px;
-        font-size: 10px;
+        font-size: var(--tags-size);
         border-radius: 5px;
+        font-style: italic;
     }
 
     /* Entfernt den Standard-Fokus-Rahmen */
@@ -45,7 +46,7 @@
     }
 
     legend {
-        font-size: 14px;
+        font-size: var(--nav-size);
         font-weight: bold;
         color: var(--color-quiz-text);
         margin-bottom: 5px;
