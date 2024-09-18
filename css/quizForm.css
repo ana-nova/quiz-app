@@ -1,0 +1,71 @@
+.main{
+    width: 100%; /* Der Container nimmt die gesamte Breite ein */
+    max-width: 600px; /* Begrenzung der maximalen Breite auf 600px */
+    padding-top: 100px; /* Abstand oben im Container, z.B. unter dem Header */
+    padding-bottom: 60px; /* Abstand unten im Container, z.B. vor dem Footer */
+    }
+
+    .form {
+        background-color: var(--color-card-backround);
+        padding: 30px;
+        margin-bottom: 20px;
+        text-align: left;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        margin: 0 auto; /* Zentriert die Card auf der Seite */
+        position: relative;
+        padding-bottom: 70px; /* Platz für den Button am unteren Rand */
+        border-radius: 50px 0 30px 0;
+      }
+  
+    /* Vereinfachte Input- und Textarea-Felder */
+    .quiz-input {
+        width: 370px;
+        padding: 8px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+
+    /* Entfernt den Standard-Fokus-Rahmen */
+    .quiz-input:focus {
+        outline: none;
+        border: 1px solid var(--color-quiz-button); /* Definiert eine benutzerdefinierte Farbe */
+    }
+  
+
+  /* Fieldset Styling */
+    fieldset {
+        border: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    legend {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--color-quiz-text);
+        margin-bottom: 5px;
+    }
+      
+  /* Button Styling */
+  .submit-btn {
+    margin-top: var(--button-margin-top);
+    padding: var(--button-padding);
+    background-color: var(--color-quiz-button);
+    color: var(--color-primary-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--quiz-button-size);
+    width: auto;
+    align-self: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

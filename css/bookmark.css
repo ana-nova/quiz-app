@@ -15,7 +15,6 @@
     position: absolute; /* Absolut innerhalb der Card positionieren */
     top: -10px; /* Abstand vom oberen Rand */
     right: -10px; /* Abstand vom rechten Rand */
-    border: 2px solid #ffcc00; /* Dicke und Farbe der Border */
     border-radius: 50%; /* Macht die Border rund */
     font-size: 1.5rem; /* Größe des Icons */
     padding: 10px; /* Abstand innerhalb des Kreises */

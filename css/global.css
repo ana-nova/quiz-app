@@ -4,6 +4,7 @@
 @import "./quiz-card.css";
 @import "./quiz-button.css";
 @import "./root.css";
+@import "./quizForm.css";
 
 *::before,
 *::after {
@@ -18,4 +19,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
+

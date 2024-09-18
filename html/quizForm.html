@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <script src="../js/newQuestions.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">🧠 Quiz App 🧠</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <form data-js="form" id="quiz-form">
+            <!-- Quizfrage -->
+            <fieldset>
+            <legend>Quiz Question</legend>
+            <label for="quiz-question">Question:</label>
+            <textarea
+                id="quiz-question"
+                name="quiz-question"
+                rows="4"
+                required
+                placeholder="Enter your quiz question here"
+            ></textarea>
+            </fieldset>
+
+            <!-- Quizantwort -->
+            <fieldset>
+            <legend>Quiz Answer</legend>
+            <label for="quiz-answer">Answer:</label>
+            <textarea
+                id="quiz-answer"
+                name="quiz-answer"
+                rows="4"
+                required
+                placeholder="Enter the answer here"
+            ></textarea>
+            </fieldset>
+
+            <!-- Quiz-Tag -->
+            <fieldset>
+            <legend>Quiz Tag</legend>
+            <label for="quiz-tag">Tag:</label>
+            <input
+                type="text"
+                id="quiz-tag"
+                name="quiz-tag"
+                required
+                placeholder="Enter a tag"
+            />
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Add Quiz</button>
+        </form> 
+    </main>
+
+        <!-- Footer mit Navigation -->
+        <footer class="footer">
+            <nav class="footer-nav">
+              <a href="index.html" class="nav-link" id="home-link">🏠 Home</a>
+              <a href="bookmark.html" class="nav-link" id="questions-link">🩷 Questions</a>
+              <a href="quizForm.html" class="nav-link">✍️ Create Quiz</a>
+              <a href="profile.html" class="nav-link">😎 Profile</a>
+            </nav>
+          </footer> 
+
+  </body>
+</html>
