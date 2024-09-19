@@ -40,12 +40,14 @@ I built this 🧠 Quiz App to flex my JS, HTML, and CSS skills! It’s all about
 - If inputs are invalid, an error message is displayed.
 
 ---
-## My ToDos:
 
 ### **Epic 4: Responsive Design**
-- Ensure that the layout adapts to different screen sizes, adjusting content for mobile, tablet, and desktop views using media queries.
+- Added responsive design to ensure layout adapts to different screen sizes
+- Adjusted spacing and content layout for mobile, tablet, and desktop views
+- Used media queries to optimize the display for each device
 
 ---
+## My ToDos:
 
 ### **Epic 5: Accessibility**
 - The app should be developed with a focus on accessibility, including ARIA labels for key interactive elements.

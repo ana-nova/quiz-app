@@ -17,6 +17,7 @@
     <!-- Main Content -->
     <main class="main">
         <form data-js="form" class="form">
+          <h2 id="form-title" hidden>Quiz Creation Form</h2>
             <!-- Fieldset für die Quizfrage -->
             <fieldset>
               <legend>Quiz Question</legend>
@@ -28,6 +29,7 @@
                 required
                 placeholder="Enter your quiz question here"
                 class="quiz-input"
+                aria-describedby="question-count"
               ></textarea>
               <span id="question-count"></span>
             </fieldset>
@@ -43,6 +45,7 @@
                 required
                 placeholder="Enter the answer here"
                 class="quiz-input"
+                aria-describedby="answer-count"
               ></textarea>
               <span id="answer-count"></span>
             </fieldset>
@@ -62,7 +65,7 @@
             </fieldset>
           
             <!-- Submit Button -->
-            <button type="submit" class="submit-btn">Submit Quiz</button>
+            <button type="submit" class="submit-btn" aria-label="Submit your quiz">Submit Quiz</button>
           </form>
           
           <!-- Container für die generierten Quiz Cards -->
@@ -74,9 +77,9 @@
         <footer class="footer">
             <nav class="footer-nav">
               <a href="../index.html" class="nav-link" aria-label="View homepage">🏠 Home</a>
-              <a href="bookmark.html" class="nav-link" id="questions-link">🩷 Questions</a>
-              <a href="quizForm.html" class="nav-link">✍️ Create Quiz</a>
-              <a href="profile.html" class="nav-link">😎 Profile</a>
+              <a href="bookmark.html" class="nav-link" id="questions-link" aria-label="View bookmarked questions">🩷 Questions</a>
+              <a href="quizForm.html" class="nav-link" aria-label="Create a new quiz">✍️ Create Quiz</a>
+              <a href="profile.html" class="nav-link" aria-label="View your profile">😎 Profile</a>
             </nav>
           </footer> 
 
