@@ -5,6 +5,7 @@
 @import "./quiz-button.css";
 @import "./root.css";
 @import "./quizForm.css";
+@import "./mediaScreens.css";
 @import '../node_modules/remixicon/fonts/remixicon.css';
 
 
@@ -23,4 +24,3 @@ body {
     align-items: center;
     
   }
-
