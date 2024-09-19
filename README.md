@@ -1,13 +1,11 @@
 
 # Quiz App
 
-## Einleitung
-
 I built this 🧠 Quiz App to flex my JS, HTML, and CSS skills! It’s all about coding, quizzes, and having fun while learning. Ready to see what I’ve put together? Let’s dive in! ✨
 
 ---
 
-## My plan in Epics and User Stories
+## My epic plan 
 
 ### **Epic 1: Create basic design with CSS**
 - A header, main content, and footer have been implemented.
@@ -44,7 +42,7 @@ I built this 🧠 Quiz App to flex my JS, HTML, and CSS skills! It’s all about
 ---
 ## My ToDos:
 
-### **Epic 4: **
+### **Epic 4: Responsive Design**
 - Ensure that the layout adapts to different screen sizes, adjusting content for mobile, tablet, and desktop views using media queries.
 
 ---
