@@ -12,21 +12,23 @@ document.querySelectorAll('.show-answer-btn').forEach(button => {
     });
   });
 
-// Finde den Bookmark-Button (nur für eine Card)
-const bookmarkButton = document.querySelector(".bookmark-btn-one");
 
-// Event Listener für den Bookmark-Button hinzufügen
-bookmarkButton.addEventListener("click", () => {
-  // Finde das Icon innerhalb des Buttons
-  const icon = bookmarkButton.querySelector("i");
+  document.querySelectorAll('.bookmark-btn-one').forEach(button => {
+    // Event Listener für den Bookmark-Button hinzufügen
+    button.addEventListener("click", () => {
+      // Finde das Icon innerhalb des Buttons
+      const icon = button.querySelector("i");
+  
+      // Überprüfen, welches Symbol aktuell angezeigt wird und es umschalten
+      if (icon.classList.contains("ri-heart-line")) {
+        icon.classList.replace("ri-heart-line", "ri-heart-fill"); // Wenn es "ri-heart-line" ist, setze "ri-heart-fill"
+      } else {
+        icon.classList.replace("ri-heart-fill", "ri-heart-line"); // Wenn es "ri-heart-fill" ist, setze "ri-heart-line"
+      }
+    });
+  });
+  
 
-  // Überprüfen, welches Symbol aktuell angezeigt wird und es umschalten
-  if (icon.classList.contains("ri-heart-line")) {
-    icon.classList.replace("ri-heart-line", "ri-heart-fill"); // Wenn es "ri-heart-line" ist, setze "ri-heart-fill"
-  } else {
-    icon.classList.replace("ri-heart-fill", "ri-heart-line"); // Wenn es "ri-heart-fill" ist, setze "ri-heart-line"
-  }
-});
 
 /* 
 classList.replace() benötigt zwei Argumente: Klasse die ich ersetzen will + Klasse die hinzugefügt werden soll
