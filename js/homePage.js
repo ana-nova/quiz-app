@@ -37,3 +37,43 @@ if (icon.classList.contains("ri-heart-line")) {
   icon.classList.remove("ri-heart-line");
   icon.classList.add("ri-heart-fill");
 */
+
+const starContainer = document.querySelector('[data-js="star-container"]');
+
+function renderStars(filledStars) {
+  // Star-Container leeren, bevor neue Sterne hinzugefügt werden
+  starContainer.innerHTML = "";
+
+  // Schleife, um 5 Sterne zu rendern
+  for (let i = 1; i <= 5; i++) {
+    // Erstelle ein <img> Element
+    const star = document.createElement("img");
+
+    // Überprüfen, ob der Stern ausgefüllt sein soll oder nicht
+    if (i <= filledStars) {
+      // Setze das Bild für einen ausgefüllten Stern
+      star.src = "../assets/star-filled.svg";
+    } else {
+      // Setze das Bild für einen leeren Stern
+      star.src = "../assets/star-empty.svg";
+    }
+
+        // Füge das Bild in den starContainer ein
+    starContainer.append(star);
+
+  }
+  
+    const stars = document.querySelectorAll('[data-js="star-container"] img');
+    stars.forEach((star, index) => {
+      star.addEventListener("click", () => {
+        // Rufe renderStars erneut auf und übergebe die neue Anzahl ausgefüllter Sterne
+        renderStars(index + 1);
+      });
+    });
+
+
+
+}
+
+// default anzeige
+renderStars(0);

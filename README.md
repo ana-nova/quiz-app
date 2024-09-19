@@ -42,23 +42,22 @@ I built this 🧠 Quiz App to flex my JS, HTML, and CSS skills! It’s all about
 ---
 
 ### **Epic 4: Responsive Design**
-- Added responsive design to ensure layout adapts to different screen sizes
-- Adjusted spacing and content layout for mobile, tablet, and desktop views
-- Used media queries to optimize the display for each device
+- Added responsive design to ensure layout adapts to different screen sizes.
+- Adjusted spacing and content layout for mobile, tablet, and desktop views.
+- Used media queries to optimize the display for each device.
 
 ---
-## My ToDos:
 
 ### **Epic 5: Accessibility**
-- The app should be developed with a focus on accessibility, including ARIA labels for key interactive elements.
+- Added ARIA labels to key interactive elements for better screen reader support.
+- Ensured all interactive elements are accessible to users with disabilities.
 
 ---
 
 ### **Epic 6: Add a star rating system**
-- Each quiz card should include a 5-star rating system, where users can fill stars by clicking on them.
-- Ratings should be stored independently for each question.
+- Each quiz card includes a 5-star rating system, where users can fill stars by clicking on them.
 
 ---
-
+## My ToDos:
 ### **Epic 7: Provide feedback on answers**
 - After a user reveals the answer, provide immediate feedback (e.g., "Correct!" or "Try again!") or simply show points

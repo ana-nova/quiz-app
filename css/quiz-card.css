@@ -50,3 +50,17 @@
   font-size: var(--tags-size); /* Schriftgröße der Tags */
   font-weight: bold; /* Fettschrift für die Tags */
 }
+
+.star-container {
+  display: flex;
+  gap: 5px;
+  padding-right: 10px;
+  padding-left: 170px;
+  align-items: center; /* Zentriert das Sterne-Rating vertikal */
+  justify-content: flex-end; /* Schiebt das Sterne-Rating nach rechts */
+}
+
+img {
+  display: block;
+  width: 24px;
+}
